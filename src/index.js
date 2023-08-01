@@ -1,11 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
+//index.js
+// importing the react and react-dom package
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+const jsxElement = <h1>This is a JSX element</h1>
+const rootElement = document.getElementById('root')
+
+ReactDOM.render(jsxElement, rootElement)
