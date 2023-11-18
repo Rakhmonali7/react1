@@ -4,37 +4,38 @@ import "./App.css";
 import SizeSelector from "./Select";
 
 function App() {
-  const [count, setCount] = useState(0);
+    const [data, setData] = useState([
+      {id: 2, name: 'John', surname: 'Doe'}
+    ])
 
-  const increment = () => {
-    setCount(count + 1);
-  };
-  const decremetn = () => {
-    setCount(count - 1);
-  };
+    const updateTable = ()=>{
+      
+    }
 
   return (
     <div>
       <div className="container">
-        <div>
-          <h2>Size:</h2>
+        <div className="inputCont">
+          <input type="text" placeholder="Name..."/>
+          <input type="text" placeholder="Surname..." />
         </div>
-
-        {/* testing size */}
-
-        <SizeSelector />
-
-        {/* testing size */}
-        <div className="count">
-          <div onClick={decremetn}>-</div>
-          <h3>{count}</h3>
-          <div onClick={increment}>+</div>
-        </div>
-        <div className="btnCont">
-          <button className="btn1">BUY NOW</button>
-          <button className="btn2">ADD TO CART</button>
-          <button className="btn3">🧡 </button>
-        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>Name</th>
+              <th>Surname</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Sardor</td>
+              <td>Mahkhmudov</td>
+              <td><button>Edit</button><button>Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );

@@ -7,88 +7,24 @@
 }
 .container {
   border: 3px solid rgb(94, 216, 94);
-  max-width: 600px;
+  max-width: 800px;
   width: 100%;
   margin: 100px auto;
   padding: 20px;
   line-height: 4em;
 }
+table{
+width: 100%;
+text-align: center;
+}
 
-.size {
+table, th, td{
+  border: 1px solid;
+  border-collapse: collapse;
+}
+.inputCont{
   display: flex;
-  justify-content: space-between;
-  max-width: 150px;
+  justify-content: space-around;
   width: 100%;
-}
-.size-box {
-  border: 2px solid #c4c3c3;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.selected {
-  border: 2px solid rgb(94, 216, 94);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.count {
-  max-width: 120px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.count > div {
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(94, 216, 94);
-  user-select: none;
-}
-
-.btnCont {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-.btn1 {
-  color: #fff;
-  width: 43%;
-  padding: 12px;
-  background-color: rgb(94, 216, 94);
-  font-size: 20px;
-  font-weight: 400;
-  border: none;
-  border-radius: 10px;
-}
-.btn2 {
-  width: 43%;
-  background-color: transparent;
-  padding: 12px;
-  font-size: 20px;
-  font-weight: 400;
-  border: solid 1px rgb(94, 216, 94);
-  border-radius: 10px;
-}
-.btn3 {
-  width: 14%;
-  background-color: transparent;
-  font-size: 20px;
-
-  font-weight: 400;
-  border: solid 1px rgb(94, 216, 94);
-  border-radius: 10px;
+  padding: 20px;
 }
