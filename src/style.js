@@ -72,11 +72,10 @@ Wrapper.div1 = styled.div`
   padding: 9.97rem 5rem;
   position: relative;
   background: #f3f3f3;
+  line-height: 4.25rem;
   p {
     color: #65665c;
-    width: 29.2375rem;
-    border: 1px solid;
-    font-family: Roboto;
+    width: 30.2375rem;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
@@ -85,7 +84,7 @@ Wrapper.div1 = styled.div`
   span {
     color: #2a2c1f;
     padding: 0.25rem 0.75rem;
-    font-family: Roboto;
+
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
@@ -98,6 +97,8 @@ Wrapper.div1 = styled.div`
   input {
     width: 19.375rem;
     height: 3rem;
+    margin-right: 1rem;
+    padding: 0.75rem 1rem;
   }
 `;
 Wrapper.div1.img1 = styled.img`
@@ -114,7 +115,7 @@ Wrapper.div1.h1 = styled.h1`
   max-width: 32.25rem;
   width: 100%;
   color: #2a2c1f;
-  font-family: Roboto;
+  font-family: Rubik;
   font-size: 3.5rem;
   font-style: normal;
   font-weight: 400;
@@ -122,5 +123,15 @@ Wrapper.div1.h1 = styled.h1`
 `;
 Wrapper.div2 = styled.div`
   flex: 1;
+  background: red;
+  img {
+    height: 100%;
+  }
+`;
+
+Wrapper.under = styled.div`
+  max-width: 80rem;
+  width: 100%;
+  height: 7.375rem;
 `;
 export { Wrapper };

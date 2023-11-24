@@ -2,6 +2,8 @@ import React from "react";
 import { Wrapper } from "./style";
 import "./App.css";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
+import Body1 from "./Body1";
+import Body2 from "./Body2";
 const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Rubik', sans-serif;
@@ -58,7 +60,7 @@ function App() {
               Interdum curabitur eget aliquam elit in mauris purus.
             </p>
             <div>
-              <input />
+              <input placeholder="Search" />
               <Wrapper.button2>Find property</Wrapper.button2>
             </div>
             <Wrapper.div1.img2 src="public/HeaderLeft.svg" alt="" />
@@ -69,6 +71,8 @@ function App() {
           </Wrapper.div2>
         </Wrapper.Mainnav>
       </Wrapper>
+      <Body1 />
+      <Body2 />
     </div>
   );
 }
